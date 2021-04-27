@@ -1,0 +1,15 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+@import "partials/basicNav1";
+
+div.navDiv {
+    nav {
+        background-image: url('../images/pokedex.png'), url('../images/pokedex2.png'), url('../images/pokedex3.png');
+        background-repeat: no-repeat, repeat, no-repeat;
+        background-size: contain;
+        height: 4rem;
+    }
+}

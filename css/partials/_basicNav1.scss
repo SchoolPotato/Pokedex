@@ -1,0 +1,15 @@
+div.navDiv {
+    nav {
+        display: flex;
+        margin: 0rem;
+        padding: {
+            top :1rem;
+            bottom: 1rem;
+        }
+        a {
+            justify-content: space-evenly;
+            font-size: 1.5rem;
+            margin: auto;
+        }
+    }
+}

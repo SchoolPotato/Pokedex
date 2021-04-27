@@ -1,1 +1,29 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+div.navDiv nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+div.navDiv nav a {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+div.navDiv nav {
+  background-image: url("../images/pokedex.png"), url("../images/pokedex2.png"), url("../images/pokedex3.png");
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-size: contain;
+  height: 4rem;
+}
+/*# sourceMappingURL=index.css.map */
