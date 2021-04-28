@@ -221,7 +221,7 @@ charmeleon = JSON.parse(charmeleon);
 charizard = JSON.parse(charizard);
 
 function writePokedex(pokemon){
-  $('.pokedex').append(`<img src="images/${pokemon.name}.png">`);
+  $('.pokedex').append(`<img id="pokemon" src="images/${pokemon.name}.png">`);
 
   $('.info').append(`<p class="stats1">Name: ${pokemon.name}<br>Base XP: ${pokemon.base_experience}<br>Height: ${pokemon.height}<br>Weight: ${pokemon.weight}</p>`);
 
