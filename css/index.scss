@@ -45,13 +45,19 @@ div.pokedex {
         background-color: $screenLight;
     }
     div.info {
+        display: block;
         padding: 0.5rem;
-        font-size: 150%;
+        font-size: 120%;
         background-color: $screenLight;
         border: 0.15rem #010002 solid;
         max-width: 40%;
         float: right;
-        margin: 5rem;
+        margin: {
+            top: 2rem;
+            right: 5rem;
+            left: 5rem;
+            bottom: auto;
+        }
         line-height: 2rem;
     }
 }

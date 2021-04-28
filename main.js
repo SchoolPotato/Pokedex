@@ -220,9 +220,26 @@ charmander = JSON.parse(charmander);
 charmeleon = JSON.parse(charmeleon);
 charizard = JSON.parse(charizard);
 
+function writePokedex(pokemon){
+  $('.pokedex').append(`<img src="images/${pokemon.name}.png">`);
 
-$(function(){
-  $('.pokedex').append(`<img src="images/${charmander.name}.png">`);
-  $('.info').append(`<p class=stats>Name: ${charmander.name}<br>Base XP: ${charmander.base_experience}<br>Height: ${charmander.height}<br>Weight: ${charmander.weight}</p>`);
-  $('.info').append(`<p class="ablities">Abilities: ${charmander.abilities[0].name}, ${charmander.abilities[1].name}</p>`);
-})
+  $('.info').append(`<p class="stats1">Name: ${pokemon.name}<br>Base XP: ${pokemon.base_experience}<br>Height: ${pokemon.height}<br>Weight: ${pokemon.weight}</p>`);
+
+  for(i = 0; i < pokemon.stats.length; i++){
+    $('.info').append(`<p class ="stats2">${pokemon.stats[i].stat.name}: ${pokemon.stats[i].base_stat}</p>`);
+  }
+
+  let types = "Types: ";
+
+  for(i = 0; i < pokemon.types.length; i++){
+    if(i != pokemon.types.length-1){
+      types += pokemon.types[i].type.name + ", ";
+    } else {
+      types += pokemon.types[i].type.name;
+    }
+  }
+
+  $('.info').append(`<p class="types">${types}</p>`);
+
+  $('.info').append(`<p class="ablities">Abilities: ${pokemon.abilities[0].name}, ${pokemon.abilities[1].name}</p>`);
+}
