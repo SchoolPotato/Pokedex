@@ -1,4 +1,8 @@
 @import "partials/basicNav1";
+@font-face {
+    font-family: "Pokemon";
+    src: url('../fonts/PokemonGb-RAeo.ttf');
+}
 
 $screen: #99cb9a;
 $screenLight: #c7e7c7;
@@ -31,6 +35,7 @@ div.navDiv {
 div.pokedex {
     background-color: $screen;
     max-width: 75%;
+    font-family: Pokemon;
     margin: {
         left: auto;
         right: auto;
@@ -40,10 +45,13 @@ div.pokedex {
         background-color: $screenLight;
     }
     div.info {
+        padding: 0.5rem;
+        font-size: 150%;
         background-color: $screenLight;
         border: 0.15rem #010002 solid;
-        width: 40%;
+        max-width: 40%;
         float: right;
         margin: 5rem;
+        line-height: 2rem;
     }
 }
