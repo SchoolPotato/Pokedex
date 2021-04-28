@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/icon.png">
-    <title>Charizard</title>
+    <title>Pokédex</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-    
+<body onload=(writePokedex(charizard))>
+    <div class="navDiv">
+        <nav>
+            <a href="index.html"><img id="power" src="images/powerButton.png"></a>
+            <a href="charmander.html"><img id="button1" src="images/button1.png"></a>
+            <a href="charmeleon.html"><img id="button2" src="images/button2.png"></a>
+            <a href="charizard.html"><img id="button3" src="images/button3.png"></a>
+        </nav>
+    </div>
+
+    <div class="pokedex">
+        <div class="info">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
